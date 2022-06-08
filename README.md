@@ -3,14 +3,14 @@ A basic RestAPI server for testing purposes.
 
 Before using change the link in conn.js from localhost to your preffered db link 
 
-Tech Stack
-    Express
-    Node
-    MySQL
-    Sequelize
-    Jest
-    
-How to use
+## Tech Stack
+1. Express
+2. Node
+3. MySQL
+4. Sequelize
+5. Jest
+
+## How to use
 
 1. Clone the repository
 2. Run "npm i"
@@ -20,7 +20,8 @@ How to use
 6. Add data in the body field as JSON
 5. Run the APIs
 
-How to use test
-    Run "npm test" in console
+## How to use test
+1. Run "npm test" in console
+
 Postman Link
     https://www.getpostman.com/collections/519b722cd909ab1bd209
