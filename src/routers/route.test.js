@@ -1,7 +1,8 @@
 
 const request = require('supertest');
 const app = require('../index.js');
-// const request = supertest(app)
+const sequelize = require('../db/conn.js');
+
 describe('Health Test', () => {
     test('Health', async () => {
         let response = await request(app).get("/health")
@@ -66,6 +67,11 @@ describe("Delete Data Test", () => {
 })
 
 describe("Filter Data Test", () => {
+
+    afterAll(() => {
+        sequelize.close();
+    });
+
     test("Filter", async () => {
         let response = await request(app)
             .get("/filter")
